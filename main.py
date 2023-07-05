@@ -15,8 +15,7 @@ while True:
         rnd = random.randint(0, 9)
 
         os.system('clear')
-        print("現在の正解数: " + str(correct))
-        print("数字: " + str(rnd))
+        print(str(rnd))
 
         time.sleep(waitTime)
 
@@ -24,9 +23,9 @@ while True:
         answerCount += 1
     else:
         os.system('clear')
-        val = input("答えを入力してください。: ")
+        val = input("input your answer: ")
         if val == answer:
-            print("正解!")
+            print("You win!")
             time.sleep(1)
 
             if answerCountMax < 10:
@@ -38,6 +37,6 @@ while True:
             answer = ""
 
         else:
-            print("不正解!")
-            print("あなたの正解数は" + str(correct) + "でした。")
+            print("You lost!")
+            print("Your numbers of current answers was " + str(correct))
             break
