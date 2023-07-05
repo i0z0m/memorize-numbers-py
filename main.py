@@ -23,7 +23,7 @@ while True:
         answerCount += 1
     else:
         os.system('clear')
-        val = input("input your answer: ")
+        val = input("Enter your answer: ")
         if val == answer:
             print("You win!")
             time.sleep(1)
@@ -38,5 +38,5 @@ while True:
 
         else:
             print("You lost!")
-            print("Your numbers of current answers was " + str(correct))
+            print("Your numbers of currect answers was " + str(correct))
             break
