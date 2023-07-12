@@ -29,9 +29,9 @@ while True:
             print("You win!")
             time.sleep(1)
 
-            if answerCountMax < 10:
+            if answerCountMax < 6:
                 answerCountMax += 1
-            if waitTime > 0.2:
+            elif waitTime > 0.2:
                 waitTime -= 0.1
             answerCount: int = 0
             correct += 1
