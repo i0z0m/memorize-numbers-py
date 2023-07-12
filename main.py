@@ -1,3 +1,4 @@
+from mydetect import detectOS, sleepTime, clearScreen
 import time
 import random
 import os
@@ -13,21 +14,21 @@ while True:
 
         rnd: int = random.randint(0, 9)
 
-        os.system('clear')
+        clearScreen()
         print(str(rnd))
 
-        time.sleep(waitTime)
+        sleepTime(waitTime)
 
         answer: str = answer + str(rnd)
         answerCount += 1
     else:
-        os.system('clear')
+        clearScreen()
 
         print("Your numbers of correct answers is " + str(correct))
         val: str = input("Enter your answer: ")
         if val == answer:
             print("You win!")
-            time.sleep(1)
+            sleepTime(1)
 
             if answerCountMax < 10:
                 answerCountMax += 1
