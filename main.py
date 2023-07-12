@@ -1,7 +1,5 @@
-from mydetect import detectOS, sleepTime, clearScreen
-import time
+from mydetect import sleepTime, clearScreen
 import random
-import os
 
 waitTime: float = 0.8
 answer: str = ""
