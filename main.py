@@ -3,10 +3,10 @@ import random
 import os
 
 waitTime: float = 0.8
-answer = ""
-answerCount = 0
-answerCountMax = 3
-correct = 0
+answer: str = ""
+answerCount: int = 0
+answerCountMax: int = 3
+correct: int = 0
 
 while True:
     if answerCount < answerCountMax:
@@ -33,9 +33,9 @@ while True:
                 answerCountMax += 1
             if waitTime > 0.2:
                 waitTime -= 0.1
-            answerCount = 0
+            answerCount: int = 0
             correct += 1
-            answer = ""
+            answer: str = ""
 
         else:
             print("You lost!")
