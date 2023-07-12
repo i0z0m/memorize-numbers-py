@@ -1,5 +1,6 @@
-from mydetect import sleepTime, clearScreen
+from mydetect import clearScreen
 import random
+import time
 
 waitTime: float = 0.8
 answer: str = ""
@@ -15,7 +16,7 @@ while True:
         clearScreen()
         print(str(rnd))
 
-        sleepTime(waitTime)
+        time.sleep(waitTime)
 
         answer: str = answer + str(rnd)
         answerCount += 1
@@ -26,7 +27,7 @@ while True:
         val: str = input("Enter your answer: ")
         if val == answer:
             print("You win!")
-            sleepTime(1)
+            time.sleep(1)
 
             if answerCountMax < 10:
                 answerCountMax += 1
